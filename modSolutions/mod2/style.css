@@ -1,66 +1,78 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 20px;
+    font-weight: 600;
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0 20px;
     padding: 0px;
 }
 h1 {
     text-align: center;
     font-size: 150%;
+    font-weight: 600;
 }
 h2 {
     font-size: 125%;
     margin: 0px 0px;
-    padding: 0px 2em;
+    padding: 0px;
+    border: 3px solid black;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    padding: 0 2em;
 }
-p {
-    margin-top: 2.5em;
-    margin-left: 1em;
-    margin-bottom: .3em;
-    text-align: left;
-}
-
-.menuItem {
-    background-color: rgb(153, 153, 153);
+section {
+    position: relative;
     border: 4px solid black;
     margin-bottom: 1em;
+    padding-left: 1em;
+    background-color: rgb(153, 153, 153);
+    float: left;
 }
-@media (max-width: 767px) {
-    #container {
-        margin: 0px 3em;
+p {
+    padding-top: 2em;
+    overflow: hidden;
+}
+#chicken h2 {background-color: rgb(213, 152, 152);}
+#beef h2 {background-color: rgb(193, 69, 67); color: #fff; font-weight: 500;}
+#sushi h2 {background-color: rgb(229, 209, 152);}
+@media (min-width: 768px) and (max-width: 991px) {
+    #chicken {
+        width: 48.5%;
+        float: left;
+    }
+    #beef {
+        width: 48.5%;
+        float: right;
+    }
+    #sushi {
+        width: 100%;
+        clear: both;
     }
 }
-
-#chicken {
-    position: relative;
-}
-#beef {
-    position: relative;
-}
-#sushi {
-    position: relative;
-}
-#chicken h2 {
-    background-color: rgb(213, 152, 152);
-    border: 3px solid black;
-    position: absolute;
-    right: -3px;
-    top: -3px;
-}
-#beef h2 {
-    color: #fff;
-    font-weight: 400; /*thinner to match with other font weight*/
-    background-color: rgb(193, 69, 67);
-    border: 3px solid black;
-    position: absolute;
-    right: -3px;
-    top: -3px;
-}
-#sushi h2 {
-    background-color: rgb(229, 209, 152);
-    border: 3px solid black;
-    position: absolute;
-    right: -3px;
-    top: -3px;
+@media (min-width: 992px) {
+    h1 {
+        padding-bottom: 1.5em;
+    }
+    section {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #container{
+        margin: 0 1em;
+    }
+    #chicken {
+        width: 31.6%;
+    }
+    #beef {
+        width: 31.6%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    #sushi {
+        width: 31.6%;
+    }
 }
