@@ -61,9 +61,11 @@ p {
         font-size: 16px;
         font-weight: 600;
     }
-    #container{
+    /*It looks like it changed in the model example, but assignment says to keep it consistent*/
+    /*#container{
         margin: 0 1em;
     }
+    */ 
     #chicken {
         width: 31.6%;
     }
