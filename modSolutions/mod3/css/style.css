@@ -53,3 +53,6 @@ section button {
 nav div.dropdown-menu.show {
     width: 100%;
 }
+#transparent {
+    background-color: rgba(0, 0, 0, 0.904);
+}
