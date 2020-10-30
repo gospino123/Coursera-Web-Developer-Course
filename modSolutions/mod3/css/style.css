@@ -47,3 +47,9 @@ section button {
 .btn.focus, .btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.2);
 }
+#hotdrop {
+    position: static;
+}
+nav div.dropdown-menu.show {
+    width: 100%;
+}
