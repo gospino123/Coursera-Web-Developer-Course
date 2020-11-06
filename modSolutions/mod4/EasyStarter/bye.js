@@ -1,4 +1,5 @@
-var name = ["Bobby", "Sheryl", "George"];
-function sayBye () {
-    console.log("Bye " + name);
+var salutation = {};
+salutation.name = ["Bobby", "Sheryl", "George"];
+salutation.sayBye function () {
+    console.log("Bye " + salutation.name);
 }
