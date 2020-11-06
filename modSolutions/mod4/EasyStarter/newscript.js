@@ -1,7 +1,8 @@
 greeter.sayHello();
 salutation.sayBye();
 
-//STEP7 objects updated to fit new forms
+// STEP7B objects updated to fit new forms
+// This ends PART1 of Lecture 52 and starts PART2
 
 
 
@@ -10,11 +11,26 @@ salutation.sayBye();
 
 
 
+// // Uncomment from HERE ON
+
+// //What is an IIFE (Immediately Invoked Function Expression)? This:
+
+// /*C.1 var a = is erased along with bottom part*/
+
+// (function (/* E.1 add parameter "name" */name) {
+//     console.log("Hello " + name/* Coursera replaced with name */);
+// } // A. The entire function is just a value/object (can be wrapped in parens)
+// ) /* D. add invocation (); --> */ (/*E.2 parameter input needed here */"Coursera!");
+// // B. Parentheses added
+
+// // C.2 a();
 
 
-
-
-
+// //Expression - Produces a Value --> produces fxn obj that gets invoked (parameters can be added)
+// //Rewritten below w/o comments:
+// (function (name) {
+//     console.log("Hello " + name);
+// })("Coursera!");
 
 
 
