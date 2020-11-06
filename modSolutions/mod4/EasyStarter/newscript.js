@@ -32,6 +32,7 @@ salutation.sayBye();
 //     console.log("Hello " + name);
 // })("Coursera!");
 
+// If using window object, then window.nameOfFxn=nameOfFxn
 
 
 
