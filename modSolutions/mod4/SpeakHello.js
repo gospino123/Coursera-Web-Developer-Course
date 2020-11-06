@@ -1,9 +1,15 @@
 (// STEP 3: Create an object, called 'helloSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
-  var helloSpeaker = {}; //Potentially wrong!!! REVIEW AFTER!!!
-  helloSpeaker.speak = "";
+  (window)//need function
+function () {
+  var helloSpeaker = {}; 
+  helloSpeaker.speak = name;
 
+}
+  
+
+  
 
   var speakWord = "Hello "; //stays global
 
@@ -14,13 +20,16 @@
     console.log(speakWord + " " + name);
   }
 
-  (function (name) {
-    console.log(speakWord + " " + name);
-  })(?);
+  // (function (name) {
+  //   console.log(speakWord + " " + name);
+  // })(?);
 
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
 // See Lecture 52, part 2
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 // xxxx.xxxx = helloSpeaker;
-)();
+
+window.helloSpeaker = helloSpeaker;
+
+)(window);
