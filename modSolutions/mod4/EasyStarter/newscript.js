@@ -1,7 +1,7 @@
-sayHello();
-sayBye();
+greeter.sayHello();
+salutation.sayBye();
 
-
+//STEP7 objects updated to fit new forms
 
 
 
