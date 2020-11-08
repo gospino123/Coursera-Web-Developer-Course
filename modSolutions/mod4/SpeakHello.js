@@ -8,4 +8,6 @@
     console.log(speakWord + " " + name);
 
   }
+  //step 5
+  window.helloSpeaker = helloSpeaker;
 })(window);
