@@ -43,7 +43,7 @@ var insertProperty = function (string, propName, propValue) {
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
   return string;
-};
+}; // TAKE AWAY;?
 
 // Remove the class 'active' from home and switch to Menu button
 var switchMenuToActive = function () {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML(), // Assuming buildAndShowHomeHTML is function/value
+  buildAndShowHomeHTML,
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
